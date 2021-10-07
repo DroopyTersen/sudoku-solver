@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  background-color: #673ab8;
+  color: #fff;
+  font-size: 1.5em;
+}
+select,
+input {
+  font-size: 18px;
+  padding: 2px;
+}
+.scanner {
+  position: fixed;
+  inset: 0;
+  canvas {
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+  }
+  video {
+    position: absolute;
+    z-index: 0;
+  }
+  .knobs {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 60px;
+    }
+    label {
+      font-size: 14px;
+    }
+  }
+}
